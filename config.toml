@@ -84,7 +84,7 @@ pygmentscodefencesguesssyntax = true
     name = "Discord"
     icon = "fa fa-discord"
     weight = 1
-    url = ""
+    url = "https://discord.gg/hCh5htU"
 #[[params.social]]
 #    name = "Github"
 #    icon = "fa fa-github"
@@ -99,7 +99,7 @@ pygmentscodefencesguesssyntax = true
     name = "RSS"
     icon = "fa fa-rss"
     weight = 4
-    url = "http://localhost:1313/posts/index.xml" # TODO Update to sub/domain once finalized
+    url = "https://tpc-discord-demo.netlify.app/posts/index.xml" # TODO Update to sub/domain once finalized
     rel = "alternate"
     type = "application/rss+xml"
 
