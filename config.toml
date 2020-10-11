@@ -1,0 +1,147 @@
+## This is the Hugo configuration file for the Podcaster's Community's
+##  website :)
+
+
+# Site Config
+
+baseURL = "http://example.org/" # TODO This needs to be changed
+languageCode = "en-us"
+title = "The Podcaster's Community"
+
+theme = ["hugo-cloak-email", "hugo-coder"]
+paginate = 20
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+#disqusShortname = "yourdiscussshortname" # This is for comments on posts. There may be a front matter option to disable it per-post
+
+
+# Analytics Options
+
+# If you want to use fathom(https://usefathom.com) for analytics, add this section
+# [params.fathomAnalytics]
+    # siteID = "ABCDE"
+    # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+    # serverURL = "analytics.example.com"
+# If you want to use plausible(https://plausible.io) for analytics, add this section
+# [params.plausibleAnalytics]
+    # domain = "example.com"
+    # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+    # serverURL = "analytics.example.com"
+# If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+# [params.goatCounter]
+    # code = "code"
+
+
+# Site Params
+
+[params]
+    author = "The Podcaster's Community"
+    description = "" # SEO and sharing description
+    keywords = "podcasters,podcasting,discord,podcast resources"
+    info = "" # this is the description that shows up on page
+    # avatarurl = "images/avatar.jpg"
+    # gravatar = "john.doe@example.com"
+    footercontent = ""
+
+    dateformat = "January 2, 2006"
+
+    hideFooter = false
+    hideCredits = true
+    hideCopyright = false
+    since = 2020
+
+    # Git Commit in Footer, uncomment the line below to enable it.
+    # commit = "https://github.com/path/to-repo/tree/" # tree was included, not sure...
+
+    rtl = false
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorscheme = "dark"
+
+    # Hide the toggle button, along with the associated vertical divider
+    hidecolorschemetoggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
+
+    # Enable Twemoji
+    enableTwemoji = true
+
+    # Custom CSS
+    custom_css = ["/css/imageslayout.css"]
+    # Custom JS
+    custom_js = []
+
+# Social listings on home page
+[[params.social]]
+    name = "Discord"
+    icon = "fa fa-discord"
+    weight = 1
+    url = ""
+#[[params.social]]
+#    name = "Github"
+#    icon = "fa fa-github"
+#    weight = 2
+#    url = "https://github.com/johndoe/"
+#[[params.social]]
+#    name = "Twitter"
+#    icon = "fa fa-twitter"
+#    weight = 3
+#    url = "https://twitter.com/johndoe/"
+[[params.social]]
+    name = "RSS"
+    icon = "fa fa-rss"
+    weight = 4
+    url = "http://localhost:1313/posts/index.xml" # TODO Update to sub/domain once finalized
+    rel = "alternate"
+    type = "application/rss+xml"
+
+
+# Language and header links config
+
+[languages]
+    [languages.en]
+        languagename = "English"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+            name = "Resources"
+            weight = 1
+            url = "/resources"
+            #[[languages.en.menu.main]]
+            #name = "About"
+            #weight = 1
+            #url = "about/"
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
+            #[[languages.en.menu.main]]
+            #name = "Projects"
+            #weight = 3
+            #url = "projects/"
+            #[[languages.en.menu.main]]
+            #name = "Contact me"
+            #weight = 5
+            #url = "contact/"
+
+
+# Blog configuration
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+[permalinks]
+  posts = "/:year/:month/:day-:slug"
+  taxonomies = "/posts/:slug"
+
+
+# ___ END OF FILE ___
