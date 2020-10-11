@@ -1,0 +1,14 @@
+# netlify.toml -- File-based configuration contexts unless
+#                 otherwise overridden by more specific
+#                 contexts.
+
+# Settings in this context are global and applied to all
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+HUGO_VERSION = "0.76.3"
+
+# Production branch deploy settings
+[context.production.environment]
+HUGO_ENV = "production"
+HUGO_VERSION = "0.76.3"

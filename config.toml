@@ -4,7 +4,7 @@
 
 # Site Config
 
-baseURL = "http://example.org/" # TODO This needs to be changed
+baseURL = "https://tpc-discord-demo.netlify.app" # TODO This needs to be changed
 languageCode = "en-us"
 title = "The Podcaster's Community"
 
