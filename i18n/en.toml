@@ -1,5 +1,7 @@
 # File slightly changed from theme's i18n file. Keep track of changes and additions from theme.
 # Additional translations also can go here.
+[author]
+other = "author"
 
 [category]
 other = "category"
