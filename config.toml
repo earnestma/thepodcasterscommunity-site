@@ -4,7 +4,7 @@
 
 # Site Config
 
-baseURL = "https://tpc-discord-demo.netlify.app" # TODO This needs to be changed
+baseURL = "https://thepodcasterscommunity.netlify.app" # TODO This needs to be changed
 languageCode = "en-us"
 title = "The Podcaster's Community"
 
@@ -85,11 +85,11 @@ pygmentscodefencesguesssyntax = true
     icon = "fa fa-discord"
     weight = 1
     url = "https://discord.gg/hCh5htU"
-#[[params.social]]
-#    name = "Github"
-#    icon = "fa fa-github"
-#    weight = 2
-#    url = "https://github.com/johndoe/"
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github"
+    weight = 2
+    url = "https://github.com/earnestma/thepodcasterscommunity-site"
 #[[params.social]]
 #    name = "Twitter"
 #    icon = "fa fa-twitter"
@@ -99,7 +99,7 @@ pygmentscodefencesguesssyntax = true
     name = "RSS"
     icon = "fa fa-rss"
     weight = 4
-    url = "https://tpc-discord-demo.netlify.app/posts/index.xml" # TODO Update to sub/domain once finalized
+    url = "https://thepodcasterscommunity.netlify.app/posts/index.xml" # TODO Update to sub/domain once finalized
     rel = "alternate"
     type = "application/rss+xml"
 
